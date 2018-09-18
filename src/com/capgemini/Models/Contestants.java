@@ -4,8 +4,7 @@ public class Contestants{
     private int attackLevel;
     private int defenseLevel;
     private int healthLevel;
-    private int changeLevel;
-    private int trainingLevel;
+    private int chanceLevel;
     private boolean endDay;
     private boolean death;
     private boolean alive;
@@ -13,12 +12,11 @@ public class Contestants{
     private String longSword; // attack +5
     private String defenseKit; // defense +5
 
-    public Contestants(int attackLevel, int defenseLevel, int healthLevel, int changeLevel, int trainingLevel){
+    public Contestants(int attackLevel, int defenseLevel, int healthLevel, int chanceLevel){
         this.attackLevel = attackLevel;
         this.defenseLevel = defenseLevel;
         this.healthLevel = healthLevel;
-        this.changeLevel = changeLevel;
-        this.trainingLevel = trainingLevel;
+        this.chanceLevel = chanceLevel;
     }
 
     public int getAttackLevel() {
@@ -45,20 +43,12 @@ public class Contestants{
         this.healthLevel = healthLevel;
     }
 
-    public int getChangeLevel() {
-        return changeLevel;
+    public int getChanceLevel() {
+        return chanceLevel;
     }
 
-    public void setChangeLevel(int changeLevel) {
-        this.changeLevel = changeLevel;
-    }
-
-    public int getTrainingLevel() {
-        return trainingLevel;
-    }
-
-    public void setTrainingLevel(int trainingLevel) {
-        this.trainingLevel = trainingLevel;
+    public void setChanceLevel(int changeLevel) {
+        this.chanceLevel = changeLevel;
     }
 
     public boolean isEndDay() {
