@@ -14,15 +14,17 @@ public class CareersPlayers {
     }
 
     public ArrayList<Contestants> createPlayers(){
-        for(int x=1; x < 8; x++){
-            careersPlayers.add(new Contestants(1,2,3,4));
+        for(int x=1; x < 7; x++){
+            careersPlayers.add(new Contestants((int)(Math.random() * 101),(int)(Math.random() * 101),(int)(Math.random() * 101),(int)(Math.random() * 101)));
         }
         return careersPlayers;
     }
 
     public void showPlayers(){
-        for(int i=1; i < careersPlayers.size(); i++ ){
-            System.out.println("players:" + i);
+        int player = 1;
+        for(Contestants x: careersPlayers){
+            x.getAttackLevel();
+            System.out.println("Career player: " + player++ + " Attack level:" + x.getAttackLevel() + " Defense level:" + x.getDefenseLevel() + " Health level:" + x.getHealthLevel() + " Chance level:" + x.getChanceLevel() );
         }
     }
 }

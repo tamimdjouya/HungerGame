@@ -20,13 +20,10 @@ public class DistrictPlayers {
     }
 
     public void showPlayers(){
-//        for(int i =1; i < districtPlayers.size(); i++ ){
-//
-//        }
-        int index = 1;
+        int player = 1;
         for(Contestants x: districtPlayers){
             x.getAttackLevel();
-            System.out.println("Player: " + index++ + " Attack level:" + x.getAttackLevel() + " Defense level:" + x.getDefenseLevel() + " Health level:" + x.getHealthLevel() + " Chance level:" + x.getChanceLevel() );
+            System.out.println("District player: " + player++ + " Attack level:" + x.getAttackLevel() + " Defense level:" + x.getDefenseLevel() + " Health level:" + x.getHealthLevel() + " Chance level:" + x.getChanceLevel() );
         }
 
     }
