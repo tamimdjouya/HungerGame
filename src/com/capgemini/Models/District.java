@@ -1,19 +1,20 @@
 package com.capgemini.Models;
 
-import java.util.ArrayList;
-
-public class District extends Contestants {
+public class District extends Contestant {
 
     private int specialDefense = 20;
 
-    public District(){
-        super(1,2,3,4);
+
+    public District(int attackLevel, int defenseLevel, int healthLevel, int chanceLevel){
+        super(attackLevel, defenseLevel, healthLevel, chanceLevel);
     }
 
-    public static void main(String[] args) {
-
+    public int getSpecialDefense() {
+        return specialDefense;
     }
 
-
+    public void setSpecialDefense(int specialDefense) {
+        this.specialDefense = specialDefense;
+    }
 
 }

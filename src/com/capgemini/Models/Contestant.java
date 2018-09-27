@@ -1,6 +1,6 @@
 package com.capgemini.Models;
 
-public class Contestants{
+public abstract class Contestant {
     private int attackLevel;
     private int defenseLevel;
     private int healthLevel;
@@ -12,7 +12,8 @@ public class Contestants{
     private String longSword; // attack +5
     private String defenseKit; // defense +5
 
-    public Contestants(int attackLevel, int defenseLevel, int healthLevel, int chanceLevel){
+
+    public Contestant(int attackLevel, int defenseLevel, int healthLevel, int chanceLevel){
         this.attackLevel = attackLevel;
         this.defenseLevel = defenseLevel;
         this.healthLevel = healthLevel;
